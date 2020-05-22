@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Programa de Fidelidade</title>
+  <base href="/itau">
+  <meta http-equiv="Content-Language" content="pt-br">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="icon" type="/assets/assets_share/logo_somente_itau.png" href="favicon.ico">
+
+  <!-- carousel slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/themes/loading-style.css"/>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>  
+  <script src="//unpkg.com/slick-carousel@1.8.1/slick/slick.js"></script>
+  <!-- carousel slick -->
+
+<link rel="stylesheet" href="styles.5e7563d6d255aac5a1a9.css"></head>
+<body class="body-app">
+  <app-root>
+    <div class="loading-container container-fluid">
+      <div id="loadingRow" class="row align-items-center">
+        <div class="col-12 col-md-4 offset-md-4 text-center">      
+          <div class="triple-spinner"></div>
+          <h4 class="loading-msg" aria-live="polite"> Estamos validando seu usuário... </h4>
+        </div>
+      </div>
+    </div>
+  </app-root>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  </script>
+<script type="text/javascript" src="runtime.d34d1acef3515fbfcbd3.js"></script><script type="text/javascript" src="polyfills.918bc2f4d194227c164f.js"></script><script type="text/javascript" src="main.64967b6dbcf6fcf8467c.js"></script></body>
+</html>
