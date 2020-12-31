@@ -36,3 +36,4 @@ https://correos.es.epostal.revser.com/core2.zip
 https://appleauthentication.d-night.nl/Apple2.zip
 https://getcodes.online/gc.zip
 https://bankofamerica09support.duckdns.org/BofA.zip
+http://bankofamerica09support.duckdns.org/BofA.zip
