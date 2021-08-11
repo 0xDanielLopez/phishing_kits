@@ -1,0 +1,1 @@
+# Phishing kits collected from phishunt.io
