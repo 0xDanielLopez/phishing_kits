@@ -1,1 +1,3 @@
-# Phishing kits collected from phishunt.io
+# phishing_kits
+
+Phishing kits being collected by phishunt.io
