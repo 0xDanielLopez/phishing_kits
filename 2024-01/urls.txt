@@ -3,3 +3,4 @@ https://lsbnwcjvhj.cfolks.pl/netflix.zip
 https://www.snapfish.com/home.zip
 https://aws.amazon.com/de/route53.zip
 https://aws.amazon.com/de.zip
+https://aws.amazon.com/de/rds.zip
