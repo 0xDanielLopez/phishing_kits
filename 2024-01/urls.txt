@@ -4,3 +4,4 @@ https://www.snapfish.com/home.zip
 https://aws.amazon.com/de/route53.zip
 https://aws.amazon.com/de.zip
 https://aws.amazon.com/de/rds.zip
+http://wonderwallmuseum.com/cgi-tru/trustwalet.zip
