@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1, user-scalable=no' name='viewport'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<title>PayPal</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="gqdzSbHlXGIy5V0qdBdwcvcF0VvBdfp6MHcEX1n4GizP4I98VJgzWuQCnLwFvmACNn3K7PgOpaYpjIwc9oV7fw==" />
+<link rel="stylesheet" media="all" href="/assets/frontend-db77a8658d8ee05d8d85d7ed7575e6f14e5255776d5857e7e08c6059ab58ee61.css" data-turbolinks-track="reload" />
+<script src="/assets/partner-5084929eb99b0feccbaf2c030d06a072c296dffe680930f5169c5227217c2bb4.js" data-turbolinks-track="reload"></script>
+<style>
+  .page h1 {
+    font-family: helvetica;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 1.3; }
+  .page .section-navbar .navbar {
+    background: #003087;
+    border-bottom: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+    .page .section-navbar .navbar .container .navbar-right a {
+      color: #fff !important; }
+  .page .section-intro {
+    margin-top: 60px;
+    background: #fcfcfc;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f9f9f9 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f9f9f9 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9f9f9',GradientType=0 ); }
+    .page .section-intro .logo {
+      margin-top: 75px;
+      margin-bottom: 50px; }
+      .page .section-intro .logo img {
+        height: 150px; }
+    .page .section-intro p.description {
+      margin: 30px auto;
+      max-width: 350px;
+      line-height: 25px;
+      font-size: 15px; }
+    .page .section-intro p.cta a {
+      color: #3a85c8;
+      font-size: 15px; }
+      .page .section-intro p.cta a:hover {
+        text-decoration: none; }
+      .page .section-intro p.cta a i {
+        margin-top: 10px;
+        font-size: 36px;
+        margin-bottom: 35px; }
+  .page .section-setup {
+    display: none;
+    text-align: center;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 50%, #f9f9f9 100%);
+    background: -webkit-linear-gradient(top, #ffffff 50%, #f9f9f9 100%);
+    background: linear-gradient(to bottom, #ffffff 50%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9f9f9',GradientType=0 );
+    padding-bottom: 65px; }
+    .page .section-setup .steps {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 315px;
+      font-size: 16px;
+      line-height: 22px; }
+      .page .section-setup .steps li {
+        margin: 10px 0; }
+    .page .section-setup p {
+      margin: 20px auto;
+      max-width: 300px;
+      font-size: 16px;
+      line-height: 22px; }
+    .page .section-setup .section-header {
+      margin: 36px 0; }
+    .page .section-setup .guide {
+      /* max-height: 285px; */
+      margin: 50px 0 30px; }
+      .page .section-setup .guide .image {
+        display: inline-block;
+        max-height: 600px;
+        position: relative; }
+        .page .section-setup .guide .image img {
+          max-height: 600px; }
+      .page .section-setup .guide .divider {
+        display: inline-block;
+        padding: 0 19px;
+        color: #dddddd;
+        font-size: 22px; }
+    .page .section-setup .help {
+      font-size: 16px; }
+      .page .section-setup .help a i {
+        font-size: 10px; }
+  .page .section-feeds {
+    text-align: center;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 75%, #f9f9f9 100%);
+    background: -webkit-linear-gradient(top, #ffffff 75%, #f9f9f9 100%);
+    background: linear-gradient(to bottom, #ffffff 75%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9f9f9',GradientType=0 );
+    padding-bottom: 65px; }
+    .page .section-feeds .icons {
+      padding-top: 100px; }
+      .page .section-feeds .icons img {
+        height: 100px; }
+    .page .section-feeds .section-header {
+      margin: 36px 0; }
+  .page .section-footer {
+    display: flex;
+    justify-content: center; }
+    .page .section-footer .footer {
+      display: flex;
+      justify-content: space-between;
+      width: 830px;
+      padding-top: 170px;
+      padding-bottom: 150px; }
+    .page .section-footer .footer-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 17px; }
+    .page .section-footer .footer-section-header {
+      margin-top: 45px; }
+    .page .section-footer p {
+      width: 330px; }
+    .page .section-footer img {
+      max-height: 110px; }
+    .page .section-footer .apple-music img {
+      border-radius: 20%;
+      box-shadow: 0 0 10px #ccc; }
+    .page .section-footer a {
+      text-decoration: none; }
+  
+  body.mobile {
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch; }
+    body.mobile .page .app-nav {
+      display: none !important; }
+    body.mobile .page h1 {
+      font-size: 24px; }
+    body.mobile .page .section-navbar .navbar-header {
+      display: inline-block; }
+    body.mobile .page .section-navbar .navbar-right {
+      float: right; }
+    body.mobile .page .section-intro {
+      padding-left: 15px;
+      padding-right: 15px; }
+      body.mobile .page .section-intro .logo img {
+        max-width: 300px;
+        height: 120px; }
+    body.mobile .page .section-setup {
+      padding-right: 30px;
+      padding-left: 30px; }
+      body.mobile .page .section-setup .steps {
+        max-width: initial;
+        font-size: 15px; }
+      body.mobile .page .section-setup .guide {
+        display: block;
+        white-space: nowrap;
+        margin-right: -30px;
+        overflow-x: scroll;
+        margin-left: -30px; }
+        body.mobile .page .section-setup .guide div:first-child {
+          margin-left: 30px; }
+        body.mobile .page .section-setup .guide img {
+          max-height: 500px; }
+    body.mobile .page .section-feeds {
+      padding-right: 30px;
+      padding-left: 30px; }
+      body.mobile .page .section-feeds .results {
+        display: inline-flex;
+        overflow-x: scroll; }
+      body.mobile .page .section-feeds .icons img {
+        height: 90px; }
+      body.mobile .page .section-feeds .feed-results .info {
+        padding: 0px; }
+      body.mobile .page .section-feeds .feed-results-container {
+        margin-right: -30px;
+        margin-left: -30px; }
+        body.mobile .page .section-feeds .feed-results-container .feed-result {
+          width: 80px;
+          margin: 0 5px; }
+          body.mobile .page .section-feeds .feed-results-container .feed-result .secondary {
+            width: 80px; }
+        body.mobile .page .section-feeds .feed-results-container div.feed-result:last-child {
+          width: 90px; }
+          body.mobile .page .section-feeds .feed-results-container div.feed-result:last-child div:first-child {
+            margin-right: 10px; }
+          body.mobile .page .section-feeds .feed-results-container div.feed-result:last-child div:nth-child(2), body.mobile .page .section-feeds .feed-results-container div.feed-result:last-child div:nth-child(3) {
+            width: 80px; }
+        body.mobile .page .section-feeds .feed-results-container .image.iosSoftware, body.mobile .page .section-feeds .feed-results-container .image.iPadSoftware, body.mobile .page .section-feeds .feed-results-container .image.desktopSoftware, body.mobile .page .section-feeds .feed-results-container .image.album, body.mobile .page .section-feeds .feed-results-container .image.artist, body.mobile .page .section-feeds .feed-results-container .image.song, body.mobile .page .section-feeds .feed-results-container .image.playlist {
+          max-width: 80px;
+          max-height: 80px; }
+          body.mobile .page .section-feeds .feed-results-container .image.iosSoftware img, body.mobile .page .section-feeds .feed-results-container .image.iPadSoftware img, body.mobile .page .section-feeds .feed-results-container .image.desktopSoftware img, body.mobile .page .section-feeds .feed-results-container .image.album img, body.mobile .page .section-feeds .feed-results-container .image.artist img, body.mobile .page .section-feeds .feed-results-container .image.song img, body.mobile .page .section-feeds .feed-results-container .image.playlist img {
+            max-width: 80px;
+            max-height: 80px; }
+        body.mobile .page .section-feeds .feed-results-container .image.movie, body.mobile .page .section-feeds .feed-results-container .image.epubBook {
+          min-height: 120px;
+          width: 80px; }
+          body.mobile .page .section-feeds .feed-results-container .image.movie img, body.mobile .page .section-feeds .feed-results-container .image.epubBook img {
+            min-height: 120px;
+            width: 80px; }
+    body.mobile .page .section-footer .footer {
+      display: block;
+      padding-top: 80px;
+      padding-bottom: 100px;
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px; }
+      body.mobile .page .section-footer .footer p {
+        width: 100%; }
+      body.mobile .page .section-footer .footer .apple-music {
+        padding-top: 80px; }
+</style>
+
+<script>
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//fruitstand.innocraft.cloud/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+</head>
+<body class='clearfix  '>
+<div class='page' id='page-5919ecfa27009003d6114128'>
+<div class='section section-navbar'>
+<nav class='navbar navbar-default navbar-fixed-top' style='background-color: #003087;border-bottom:0;box-shadow: 0 0 5px rgba(0, 0, 0, .15);'>
+<div class='container'>
+<div class='navbar-header'>
+<a class='navbar-brand' href='https://www.paypal.com/ca/' target='_blank'>
+<img height='20' src='//s3.amazonaws.com/apple-platypus-production/assets/attachments/5910/e0c3/daa6/c31c/24e1/ee58/original/pp-white.svg?1494287176'>
+</a>
+</div>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a href='https://www.paypal.com/ca/' style='color: #ffffff;' target='_blank'>Sign up to PayPal</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+
+<div class='section section-intro' id='section-5919ecfa27009003d611412a'>
+  <div class='container text-center'>
+    <div class='logo'>
+      <img src='//s3.amazonaws.com/apple-platypus-production/assets/attachments/5910/e0ac/2700/9015/9d6e/8e6a/original/pp_v_rgb.png?1494278316'>
+
+    </div>
+    <h1 class='section-header'>Endless entertainment. One easy way to pay.</h1>
+    <p class='description'>You can now use PayPal to pay on App&nbsp;Store, Apple&nbsp;Music, iTunes, Apple&nbsp;Books and iCloud. It’s a fast and easy way to pay for the entertainment you love.</p>
+    <p class='cta'>
+      <a href='javascript:;' id='toggleSetup'>
+        Set up
+        <br>
+        <i class='plus-minus apple-plus'></i>
+      </a>
+    </p>
+  </div>
+  <script>
+    $("#toggleSetup").on("click", function(e){
+    
+      e.preventDefault();
+      $(this).find('i').toggleClass('apple-plus apple-minus')
+      $(this).closest('.section').next('.section').slideToggle(1000)
+    });
+    
+    $(function(){
+      $("#toggleSetup").click();
+    })
+  </script>
+</div>
+
+<div class='section section-setup' id='section-5919ecfa27009003d611412b'>
+  <h1 class='section-header'>Get set up.</h1>
+  <ol class='steps'>
+    <li>
+      <a data-track='setup' href='https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/editAddress?mt=8&amp;itscg=0200&amp;itsct=PayPal_CA_LP' target='_blank'>Go to Settings, tap your name, and select iTunes & App Store.</a>
+    </li>
+    <li>Tap payment information.</li>
+    <li>Tap "PayPal" then tap “Account”.</li>
+    <li>Follow the steps to authorize your account.</li>
+  </ol>
+  <p>Your account will now charge all future purchases to your PayPal account</p>
+  <div class='guide'></div>
+  <div class='help'>
+    Need more help? Get support
+    <br>
+    <a href='https://support.apple.com/en-ca' target='_blank'>
+      Get support
+    </a>
+  </div>
+</div>
+
+<div class='section section-feeds'>
+<div class='icons'>
+<img src='//s3.amazonaws.com/apple-platypus-production/assets/attachments/58ff/cc04/6361/c938/b875/bd6b/original/global-lockup-books.png?1562606790'>
+</div>
+<h1 class='section-header'>
+Apps, music, movies and more
+</h1>
+<div class='feed-results results-5919ecfa27009003d611412c-1'>
+<div class='info'>
+<div class='title'>Apps</div>
+</div>
+<div class='feed-results-container'>
+<div class='app-nav iosSoftware nav-left'>
+<i class='circle-chevron circle-chevron-left'></i>
+</div>
+<div class='results'>
+<div class='feed-result' data-counter='0'>
+<div class='image iosSoftware'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/75/d5/76/75d57691-bb29-461c-0889-c2a2a09d75fd/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-85-220.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Clash Royale</div>
+<div class='secondary'>Supercell</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/clash-royale/id1053012308?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='1'>
+<div class='image iosSoftware'>
+<img src='https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/6f/77/9c/6f779c37-5234-0a44-aafc-5f7faf0fa739/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-85-220.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Candy Crush Soda Saga</div>
+<div class='secondary'>King</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/candy-crush-soda-saga/id850417475?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='2'>
+<div class='image iosSoftware'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/00/6a/00/006a006e-c9ff-f760-c6fa-27c379eaeb1a/AppIcon-1x_U007emarketing-0-10-0-0-0-85-220-0.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Netflix</div>
+<div class='secondary'>Netflix, Inc.</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/netflix/id363590051?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='3'>
+<div class='image iosSoftware'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/53/1d/b7/531db707-72c6-6e8b-806a-aa3ed9cb872c/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-85-220.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Pokémon GO</div>
+<div class='secondary'>Niantic, Inc.</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/pok%C3%A9mon-go/id1094591345?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='4'>
+<div class='image iosSoftware'>
+<img src='https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/68/fb/7e/68fb7ec1-e45e-e404-d2f9-b09a7c47e811/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Tinder - dating</div>
+<div class='secondary'>Tinder Inc.</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/tinder-dating/id547702041?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='5'>
+<div class='image iosSoftware'>
+<img src='https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/2b/93/53/2b935390-fd7a-2301-5dd2-8e84599c19bc/AppIcon-0-1x_U007emarketing-0-85-220-9.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Minecraft</div>
+<div class='secondary'>Mojang</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/minecraft/id479516143?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='6'>
+<div class='image iosSoftware'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/f3/2e/e9/f32ee9ce-6eec-a104-3ac4-749b4b91b7f4/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Sportsnet</div>
+<div class='secondary'>Rogers Media</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/sportsnet/id602321016?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='7'>
+<div class='image iosSoftware'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/ec/8a/32/ec8a329f-3f6b-deca-95c2-18e99d660b88/AppIcon-1x_U007emarketing-0-7-0-85-220.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>FIFA Soccer</div>
+<div class='secondary'>Electronic Arts</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/fifa-soccer/id1094930513?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='8'>
+<div class='image iosSoftware'>
+<img src='https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/93/1c/d7/931cd7c0-abe5-96f0-e1fd-192557a358bc/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>MyFitnessPal</div>
+<div class='secondary'>Under Armour, Inc.</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/myfitnesspal/id341232718?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='9'>
+<div class='image iosSoftware'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/00/26/bc/0026bcc2-bb0b-a785-1cf4-0e82a09d0c29/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Kijiji Ads: Shop Local &amp; Save</div>
+<div class='secondary'>Marktplaats BV</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/kijiji-ads-shop-local-save/id318979520?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='10'>
+<div class='image iosSoftware'>
+<img src='https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/a7/04/5d/a7045ded-084a-19e7-e7ec-b18afdd4feb3/AppIcon-1x_U007emarketing-0-6-0-0-sRGB-85-220.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Flipp - Weekly Shopping</div>
+<div class='secondary'>Flipp Corporation</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/flipp-weekly-shopping/id725097967?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='11'>
+<div class='image iosSoftware'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/cd/be/66/cdbe6666-dd66-2733-d595-91ddcf2f51de/AppIcon-0-1x_U007emarketing-0-85-220-6.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>KAMI 2</div>
+<div class='secondary'>State of Play Games</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/kami-2/id1133161444?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='12'>
+<div class='image iosSoftware'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/ad/1c/7e/ad1c7e48-c20f-894d-df20-a29dc59228d7/AppIcon-0-1x_U007emarketing-0-85-220-0-7.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Transformers Rescue Bots: Dash</div>
+<div class='secondary'>Budge Studios</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/transformers-rescue-bots-dash/id1198584568?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='13'>
+<div class='image iosSoftware'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/f4/e3/4c/f4e34c91-0b63-e34d-5f9e-9eeae1ecb3fe/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-85-220.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Jurassic World™: The Game</div>
+<div class='secondary'>Ludia</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/jurassic-world-the-game/id791211390?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='14'>
+<div class='image iosSoftware'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/b2/d8/24/b2d824ed-505f-fb9a-33d8-cb3bdca37702/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>CSR Racing 2</div>
+<div class='secondary'>NaturalMotion</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/csr-racing-2/id887947640?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='15'>
+<div class='image iosSoftware'>
+<img src='https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/02/c3/d1/02c3d19c-6967-ca4e-e891-e486ed1e4b62/AppIcon-0-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Facetune2: Best Selfie Editing</div>
+<div class='secondary'>Lightricks Ltd.</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/facetune2-best-selfie-editing/id1149994032?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+<div class='feed-result' data-counter='16'>
+<div class='image iosSoftware'>
+<img src='https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/d2/82/69/d2826995-8d89-e1de-a18b-3470ab36b276/AppIcon-0-0-1x_U007emarketing-0-0-0-4-0-0-P3-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Prizmo Go › Text Grabber</div>
+<div class='secondary'>Creaceed SPRL</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://apps.apple.com/ca/app/prizmo-go-text-grabber/id1183367390?mt=8&amp;at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on the App&nbsp;Store</a>
+</div>
+</div>
+</div>
+<div class='app-nav iosSoftware nav-right'>
+<i class='circle-chevron circle-chevron-right'></i>
+</div>
+</div>
+</div>
+<script>
+  if (!$("body").hasClass("mobile")) {
+    count ="17"
+    kind = ".iosSoftware"
+    $(".results-5919ecfa27009003d611412c-1 .results").slick({
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      slide: ".results-5919ecfa27009003d611412c-1 .feed-result",
+      prevArrow: ".results-5919ecfa27009003d611412c-1 .nav-left",
+      nextArrow: ".results-5919ecfa27009003d611412c-1 .nav-right",
+      infinite: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 950,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  
+    if (count < 6) {
+      $(".app-nav" + kind).css('visibility', 'hidden')
+    }
+  }
+</script>
+
+<div class='feed-results results-5919ecfa27009003d611412c-2'>
+<div class='info'>
+<div class='title'>Music</div>
+</div>
+<div class='feed-results-container'>
+<div class='album app-nav nav-left'>
+<i class='circle-chevron circle-chevron-left'></i>
+</div>
+<div class='results'>
+<div class='feed-result' data-counter='0'>
+<div class='album image'>
+<img src='https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/05/b1/f6/05b1f61d-944e-2699-7f08-ac195bfed8d2/00602557608717.rgb.jpg/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>DAMN.</div>
+<div class='secondary'>Kendrick Lamar</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://music.apple.com/ca/album/damn/1223592280?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Listen now</a>
+</div>
+</div>
+<div class='feed-result' data-counter='1'>
+<div class='album image'>
+<img src='https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ad/1c/2f/ad1c2ff6-c927-d82c-fc6d-adcdc39a72f6/00602557499902.rgb.jpg/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Pleasure</div>
+<div class='secondary'>Feist</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://music.apple.com/ca/album/pleasure/1214542133?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Listen now</a>
+</div>
+</div>
+<div class='feed-result' data-counter='2'>
+<div class='album image'>
+<img src='https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/9a/35/95/9a3595c7-c675-fd74-352f-44e3638ac123/190295851286.jpg/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>÷ (Deluxe)</div>
+<div class='secondary'>Ed Sheeran</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://music.apple.com/ca/album/deluxe/1193701079?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Listen now</a>
+</div>
+</div>
+<div class='feed-result' data-counter='3'>
+<div class='album image'>
+<img src='https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/63/56/0f/63560ff6-35b6-a238-702f-ad859a8055a4/00602557579376.rgb.jpg/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>More Life</div>
+<div class='secondary'>Drake</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://music.apple.com/ca/album/more-life/1216986780?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Listen now</a>
+</div>
+</div>
+<div class='feed-result' data-counter='4'>
+<div class='album image'>
+<img src='https://is4-ssl.mzstatic.com/image/thumb/Music111/v4/17/3d/4b/173d4bf0-c433-9bd7-4cc9-3d32b1a766ba/190295824822.jpg/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Humanz (Deluxe)</div>
+<div class='secondary'>Gorillaz</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://music.apple.com/ca/album/humanz-deluxe/1217911994?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Listen now</a>
+</div>
+</div>
+<div class='feed-result' data-counter='5'>
+<div class='album image'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/36/10/fb/3610fb9e-2b2c-c8f1-313a-76fe0e9923a3/16UMGIM67863.rgb.jpg/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Starboy</div>
+<div class='secondary'>The Weeknd</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://music.apple.com/ca/album/starboy/1156172520?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Listen now</a>
+</div>
+</div>
+<div class='feed-result' data-counter='6'>
+<div class='album image'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/3a/be/3f/3abe3fcd-ea28-bc01-1f16-cca5d659e9a6/00602557542783.rgb.jpg/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>From A Room: Volume 1</div>
+<div class='secondary'>Chris Stapleton</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://music.apple.com/ca/album/from-a-room-volume-1/1222152230?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Listen now</a>
+</div>
+</div>
+<div class='feed-result' data-counter='7'>
+<div class='album image'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Music111/v4/59/76/a2/5976a237-d74f-3f92-70c6-6dace85b1638/779913773324_cover.jpg/240x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Le petit spectacle à La Chapelle</div>
+<div class='secondary'>Ariane Moffatt</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://music.apple.com/ca/album/le-petit-spectacle-%C3%A0-la-chapelle/1220204267?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Listen now</a>
+</div>
+</div>
+</div>
+<div class='album app-nav nav-right'>
+<i class='circle-chevron circle-chevron-right'></i>
+</div>
+</div>
+</div>
+<script>
+  if (!$("body").hasClass("mobile")) {
+    count ="8"
+    kind = ".album"
+    $(".results-5919ecfa27009003d611412c-2 .results").slick({
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      slide: ".results-5919ecfa27009003d611412c-2 .feed-result",
+      prevArrow: ".results-5919ecfa27009003d611412c-2 .nav-left",
+      nextArrow: ".results-5919ecfa27009003d611412c-2 .nav-right",
+      infinite: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 950,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  
+    if (count < 6) {
+      $(".app-nav" + kind).css('visibility', 'hidden')
+    }
+  }
+</script>
+
+<div class='feed-results results-5919ecfa27009003d611412c-3'>
+<div class='info'>
+<div class='title'>Movies</div>
+</div>
+<div class='feed-results-container'>
+<div class='app-nav movie nav-left'>
+<i class='circle-chevron circle-chevron-left'></i>
+</div>
+<div class='results'>
+<div class='feed-result' data-counter='0'>
+<div class='image movie'>
+<img src='https://is4-ssl.mzstatic.com/image/thumb/Video127/v4/3f/a5/bc/3fa5bc13-804a-260d-67b4-6ebaf26c3e13/pr_source.jpg/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>The Fate of the Furious</div>
+<div class='secondary'>F. Gary Gray</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/the-fate-of-the-furious/id1220995579?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='1'>
+<div class='image movie'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Features127/v4/68/cd/5e/68cd5e91-ade0-360e-647c-7668398814a5/mza_5236832119904283707.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Logan</div>
+<div class='secondary'>James Mangold</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/logan/id1207483880?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='2'>
+<div class='image movie'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Video117/v4/ed/9c/6d/ed9c6da5-2e3d-8287-357e-cffa4f1582d6/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Beauty and the Beast (2017)</div>
+<div class='secondary'>Bill Condon</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/beauty-and-the-beast-2017/id1212678379?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='3'>
+<div class='image movie'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Video122/v4/07/11/ac/0711acca-18a2-f132-c5ab-584e70ca8a2e/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>The LEGO® Batman Movie</div>
+<div class='secondary'>Chris Mckay</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/the-lego-batman-movie/id1197505667?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='4'>
+<div class='image movie'>
+<img src='https://is5-ssl.mzstatic.com/image/thumb/Video117/v4/57/ce/15/57ce155e-7f0f-b02b-7dac-f6d3fa6e3cf8/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Kong: Skull Island</div>
+<div class='secondary'>Jordan Vogt-Roberts</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/kong-skull-island/id1209705645?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='5'>
+<div class='image movie'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Video118/v4/e1/80/56/e18056d2-e868-ea5f-4fec-2eba50f2655a/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>The Lost City of Z</div>
+<div class='secondary'>James Gray</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/the-lost-city-of-z/id1225745860?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='6'>
+<div class='image movie'>
+<img src='https://is1-ssl.mzstatic.com/image/thumb/Video111/v4/0a/0f/94/0a0f94a1-c507-86bb-95c5-399ad3dd23cf/pr_source.jpg/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Get Out</div>
+<div class='secondary'>Jordan Peele</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/get-out/id1202441786?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='7'>
+<div class='image movie'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Video52/v4/72/88/e8/7288e8bf-6bea-8995-31c0-bcb12fc08abe/02471_US_FiftyShadesDarker_LSR_2000x3000.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Fifty Shades Darker</div>
+<div class='secondary'>James Foley</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/fifty-shades-darker/id1231623633?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='8'>
+<div class='image movie'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Video111/v4/6a/61/bf/6a61bf77-f085-95a0-e59b-068e565f3c01/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>The Founder</div>
+<div class='secondary'>John Lee Hancock</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/the-founder/id1179571487?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='9'>
+<div class='image movie'>
+<img src='https://is3-ssl.mzstatic.com/image/thumb/Video111/v4/43/0c/c3/430cc373-6849-9f38-8d36-08a88739e09a/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Split (2017)</div>
+<div class='secondary'>M. Night Shyamalan</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/split-2017/id1189252846?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='10'>
+<div class='image movie'>
+<img src='https://is2-ssl.mzstatic.com/image/thumb/Video128/v4/7b/f9/3e/7bf93e18-d661-eb11-8d91-361ef7f924e9/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Colossal</div>
+<div class='secondary'>Nacho Vigalondo</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/colossal/id1227523058?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='11'>
+<div class='image movie'>
+<img src='https://is1-ssl.mzstatic.com/image/thumb/Video127/v4/fc/25/31/fc253170-3c1c-a92a-690b-abfe136bf8a1/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Smurfs: The Lost Village</div>
+<div class='secondary'>Unknown</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/smurfs-the-lost-village/id1212655586?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+<div class='feed-result' data-counter='12'>
+<div class='image movie'>
+<img src='https://is4-ssl.mzstatic.com/image/thumb/Video111/v4/68/fb/ef/68fbefe0-6218-5319-503e-8201a79eb5f7/pr_source.lsr/160x240bb.png'>
+</div>
+<div class='meta'>
+<div class='primary'>Fantastic Beasts and Where to Find Them</div>
+<div class='secondary'>David Yates</div>
+</div>
+<div class='link'>
+<a class='ltr more' href='https://itunes.apple.com/ca/movie/fantastic-beasts-and-where-to-find-them/id1170244491?at=1010lwyv&amp;ct=paypal_ca-en' target='_blank'>Get it on iTunes</a>
+</div>
+</div>
+</div>
+<div class='app-nav movie nav-right'>
+<i class='circle-chevron circle-chevron-right'></i>
+</div>
+</div>
+</div>
+<script>
+  if (!$("body").hasClass("mobile")) {
+    count ="13"
+    kind = ".movie"
+    $(".results-5919ecfa27009003d611412c-3 .results").slick({
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      slide: ".results-5919ecfa27009003d611412c-3 .feed-result",
+      prevArrow: ".results-5919ecfa27009003d611412c-3 .nav-left",
+      nextArrow: ".results-5919ecfa27009003d611412c-3 .nav-right",
+      infinite: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 950,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  
+    if (count < 6) {
+      $(".app-nav" + kind).css('visibility', 'hidden')
+    }
+  }
+</script>
+
+</div>
+
+<div class='ltr section section-offers'>
+<div class='footer'>
+<div class='footer-section'>
+<img src='//s3.amazonaws.com/apple-platypus-production/assets/attachments/5901/7553/6361/c974/bf60/9689/original/icloud.png?1493267795'>
+<h1 class='footer-section-header'>iCloud Storage</h1>
+<p>iCloud securely stores your photos, videos, documents, music, apps and more</p>
+<a data-track='offer_1' href='https://www.apple.com/ca/icloud/' target='_blank'>
+Learn more
+</a>
+</div>
+<div class='footer-section apple-music'>
+<img src='//s3.amazonaws.com/apple-platypus-production/assets/attachments/5901/7560/6361/c974/bc60/9689/original/icon-apple-music.png?1549392870'>
+<h1 class='footer-section-header'>Take Apple Music for a spin</h1>
+<p>The songs you already own plus unlimited access to millions more</p>
+<a data-track='offer_2' href='https://itunes.apple.com/deeplink?app=music&amp;p=subscribe&amp;itscg=0318&amp;itsct=subscribe&amp;at=1010lwyv&amp;ct=trial_paypal_ca-en' target='_blank'>
+Start your trial
+</a>
+</div>
+</div>
+</div>
+
+<div class='section section-footer'>
+<div class='footer-wrapper'>
+<hr>
+<a href="https://www.apple.com/privacy/privacy-policy">Privacy Policy</a>
+</div>
+</div>
+
+</div>
+
+<script>
+  var loggingEnabled = false;
+  addNewRelicData()
+</script>
+<script src="https://markhor-cdn.organicfruitapps.com/v1/latest/markhor.min.js"></script>
+<script>
+  if (!Markhor.tracker) {
+    Markhor.tracker = Markhor.buildTracker("2", "https://markhor.organicfruitapps.com/analytics")
+  }
+  
+  Markhor.tracker.trackEvent("page", "load", window.location.href)
+</script>
+
+</body>
+</html>
