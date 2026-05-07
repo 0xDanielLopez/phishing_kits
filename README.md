@@ -5,4 +5,4 @@ Archive of phishing kits collected from suspicious domains detected by
 
 Layout: `YYYY-MM/<host> (<filename>.ext)/<filename>.ext`.
 
-Archives are stored as captured. Research / OSINT use only — never executed.
+Archives are stored as captured. Research / OSINT use only - never executed.
