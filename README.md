@@ -1,15 +1,15 @@
 # phishing_kits
 
 Archive of phishing kits collected from suspicious domains detected by
-[phishunt.io](https://phishunt.io/). 1,092 archives, 2020 to date.
+[phishunt.io](https://phishunt.io/). Over 1,000 archives, 2020 to date. The
+exact count is the number of rows in `index.csv`.
 
 Layout: `YYYY/YYYYMM/<host> (<filename>.ext)/<filename>.ext`.
 
 ## Read this before cloning
 
-These are live phishing kits, stored exactly as they were captured and **not
-password-protected**, unlike theZoo, MalwareBazaar or vx-underground. That has
-consequences:
+These are live phishing kits, stored exactly as they were captured: **not
+encrypted, not password-protected, not defanged**. That has consequences:
 
 - Antivirus will quarantine files mid-checkout, and may flag the clone as a whole.
 - Do not clone into a synced folder (Dropbox, OneDrive, Google Drive) or onto a
@@ -65,11 +65,6 @@ metadata in `index.csv`. Research and OSINT use only.
 ## Removal requests
 
 If you are the owner of data inside a kit, a brand being impersonated, or the
-owner of a compromised host, report it privately through
-[GitHub private reporting](https://github.com/0xDanielLopez/phishing_kits/security/advisories/new)
-or at info@phishunt.io, rather than opening a public issue. Include the exact
-path, the reason and your relation to it.
-
-Substantiated requests are removed from the tip of `master`. Git history and the
-existing forks are outside my control, so removal cannot be guaranteed to be
-complete.
+owner of a compromised host, see [SECURITY.md](SECURITY.md). Report it privately
+rather than opening a public issue, which would republish the exact path you are
+asking to have removed.
