@@ -1,7 +1,8 @@
 # phishing_kits
 
 Archive of phishing kits collected from suspicious domains detected by
-[phishunt.io](https://phishunt.io/). Over 1,000 archives, 2020 to date. The
+[phishunt.io](https://phishunt.io/). Over 1,000 archives, collected since 2020
+but not in every month (see [Coverage over time](#coverage-over-time)). The
 exact count is the number of rows in `index.csv`.
 
 Layout: `YYYY/YYYYMM/<host> (<filename>.ext)/<filename>.ext`.
@@ -20,6 +21,30 @@ encrypted, not password-protected, not defanged**. That has consequences:
   samples to sandboxes or scanners in public mode.
 
 Analyse in an isolated environment.
+
+## Coverage over time
+
+Collection has not been continuous. A month with nothing collected has no
+directory in the tree and no rows in `index.csv`, so months are skipped rather
+than shown as empty. Rows per month therefore measure what was captured, not
+how much phishing existed.
+
+One gap has a known cause. There are no archives for July 2025 through April
+2026, ten consecutive months, because nothing was being collected: this
+repository received no commits at all between 13 June 2025 and 7 May 2026, and
+the first capture after that landed on 9 May 2026. `git log` shows both.
+
+Other months are absent as well. Their cause is not established and is not
+guessed at here. Volume also varies by more than an order of magnitude between
+the months that were collected. Treat this as an opportunistic sample rather
+than a time series.
+
+Which months exist, and how many archives each holds:
+
+```
+curl -s https://raw.githubusercontent.com/0xDanielLopez/phishing_kits/master/index.csv \
+  | awk -F/ 'NR>1 {print $2}' | sort | uniq -c
+```
 
 ## index.csv
 
